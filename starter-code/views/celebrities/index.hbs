@@ -4,8 +4,10 @@
 {{#each celebrities}}
     <div>
         <a href='/celebrities/{{id}}'>{{name}}</a>
+        //
+        <a href='/celebrities/{{id}}/edit'>Edit</a>
         <form action='/celebrities/{{id}}/delete' method='POST'>
-            <input type='submit' value='Delete'>
+            <button>Delete</button>
         </form>
     </div>
 {{/each}}
