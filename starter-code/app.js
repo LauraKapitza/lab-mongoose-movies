@@ -54,5 +54,9 @@ app.locals.title = 'Express - Generated with IronGenerator';
 const index = require('./routes/index');
 app.use('/', index);
 
+const celebrityRouter = require('./routes/celebrities.js');
+app.use('/', celebrityRouter)
+
+app.listen(3000, () => console.log('App listening on port 3000'))
 
 module.exports = app;
